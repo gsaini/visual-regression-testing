@@ -12,7 +12,7 @@
     "@types/react-dom": "^18.0.5",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
-    "react-scripts": "5.0.1",
+    "react-scripts": "^5.0.1",
     "typescript": "^4.7.3",
     "web-vitals": "^2.1.4"
   },
@@ -39,5 +39,16 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/jsdom-screenshot": "^3.2.1",
+    "jest-image-snapshot": "^5.1.0",
+    "jest-transform-css": "^4.0.1",
+    "jsdom-screenshot": "^4.0.0"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.css$": "jest-transform-css"
+    }
   }
 }
